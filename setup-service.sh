@@ -7,8 +7,8 @@ systemctl daemon-reload
 sudo systemctl enable setssdroot.service
 
 # Copy these over to the SSD
-sudo cp /etc/systemd/system/setssdroot.service /mnt/etc/systemd/system/setssdroot.service
-sudo cp /sbin/setssdroot.sh /mnt/sbin/setssdroot.sh
+sudo cp /etc/systemd/system/setssdroot.service /media/ssd/etc/systemd/system/setssdroot.service
+sudo cp /sbin/setssdroot.sh /media/ssd/sbin/setssdroot.sh
 
 # Create setssdroot.conf which tells the service script to set the rootfs to the SSD
 # If you want to boot from SD again, remove the file /etc/setssdroot.conf from the SD card.
